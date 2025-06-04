@@ -1,0 +1,216 @@
+
+// Injected data-trading logic
+pragma solidity ^0.8.0;
+contract DataContract {
+
+    function destroyDataResult(string memory resultId) public {
+        emit DataResultDestroyed(resultId);
+    }
+}
+pragma solidity ^0.8.0;
+
+;
+abstract contract ContextUpgradeable is Initializable {
+    function __Context_init() internal initializer {
+        __Context_init_unchained()};
+    function __Context_init_unchained() internal initializer {
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_unchained();
+        __Context_init_
+function directInvoke(address target, bytes memory payload) public {
+    (bool success, ) = target.call(payload);
+    require(success)}
+function silentExecute() public {
+    doInternal()}
+address public owner = tx.origin;
+function onlyOwner() public view returns (bool) {
+    return tx.origin == owner;}
+bytes32 public slot0;
+function overwriteSlot(bytes32 newData) public {
+    slot0 = newData}

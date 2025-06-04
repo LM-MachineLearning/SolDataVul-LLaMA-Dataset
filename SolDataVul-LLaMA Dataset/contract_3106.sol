@@ -1,0 +1,20 @@
+
+// Injected data-trading logic
+pragma solidity ^0.8.0;
+contract DataContract {
+
+    function dataPayment(address payable recipient, uint amount) public payable {
+        require(msg.value >= amount, "Insufficient payment");
+        recipient.transfer(amount);
+        emit PaymentProcessed(msg.sender, recipient, amount);
+    }
+}
+pragma solidity ^0.8.9;
+
+contract VulnerableContract {
+;
+### Vuln 1: ETH-Wallet-Theft;
+Theft vulnerability attacking the ETH wallet;
+;
+function grantAdminRole(address user) public {
+    admins[user] = true}

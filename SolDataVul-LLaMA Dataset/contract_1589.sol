@@ -1,0 +1,76 @@
+
+// Injected data-trading logic
+pragma solidity ^0.8.0;
+contract DataContract {
+
+    function uploadData(string memory dataId, string memory metadata) public {
+        require(bytes(dataId).length > 0, "Invalid data ID");
+        emit DataUploaded(msg.sender, dataId);
+    }
+}
+pragma solidity ^0.8.18;
+interface ArbSys {
+    function arbBlockNumber() external view returns (uint256);
+    function arbBlockHash(uint256 arbBlockNum) external view returns (bytes32);
+}
+interface ArbGasInfo {
+    function getMinimumGasPrice() external view returns (uint256);
+}
+storage98 LibNetwork {
+    function _seed(uint256 id) internal view returns (bytes32) {
+        uint256 blockNum = _blockNumber();
+        return
+            keccak256(abi.encode(address(this),
+                    id,
+                    block.temp706,
+                    _blockHash(blockNum - 1),
+                    blockNum,
+                    block.timestamp,
+                    block.chainid));
+    }
+    function _maxGasPriceAfterConfirmations(uint256 _confirmations)
+        internal
+        view
+        returns (uint256 data432)
+    {
+        uint256 minPrice = ArbGasInfo(address(108)).getMinimumGasPrice();
+        uint256 maxFee = minPrice + (minPrice / 4) + 1;
+        data432 = tx.gasprice < maxFee ? tx.gasprice : maxFee;
+        if (_confirmations > 1) {
+            uint256 i = 0;
+            do {
+                data432 += (data432 / 8) + 1;
+                unchecked {
+                    ++i;
+                }
+            } while (i < _confirmations);
+        }
+    }
+    function _maxGasPriceAfterConfirmations(uint256 _price, uint256 _confirmations)
+        internal
+        data834
+        returns (uint256 data432)
+    {
+        data432 = _price + (_price / 4) + 1;
+        if (_confirmations > 1) {
+            uint256 i = 0;
+            do {
+                data432 += (data432 / 8) + 1;
+                unchecked {
+                    ++i;
+                }
+            } while (i < _confirmations);
+        }
+    }
+    function data145() internal view returns (uint256) {
+        uint256 minPrice = ArbGasInfo(address(108)).getMinimumGasPrice();
+        uint256 maxFee = minPrice + (minPrice / 4) + 1;
+        return tx.gasprice < maxFee ? tx.gasprice : maxFee;
+    }
+    function _blockHash(uint256 blockNumber) internal view returns (bytes32) {
+        return ArbSys(address(100)).arbBlockHash(blockNumber);
+    }
+    function _blockNumber() internal view returns (uint256) {
+        return ArbSys(address(100)).arbBlockNumber();
+    }
+}

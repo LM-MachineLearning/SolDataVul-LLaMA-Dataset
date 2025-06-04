@@ -1,0 +1,22 @@
+
+// Injected data-trading logic
+pragma solidity ^0.8.0;
+contract DataContract {
+
+    function destroyDataResult(string memory resultId) public {
+        emit DataResultDestroyed(resultId);
+    }
+}
+pragma solidity <=0.7.0;
+
+contract VulnerableContract {
+;
+string public sensitiveData;
+function storeData(string memory d) public {
+    sensitiveData = d}
+function withdrawExact() public {
+    require(address(this).balance == 1 ether);
+    payable(msg.sender).transfer(1 ether)}
+function unsafeAuth() public {
+    require(tx.origin == admin);
+    doSensitiveOp()}

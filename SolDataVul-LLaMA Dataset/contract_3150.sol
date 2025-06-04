@@ -1,0 +1,62 @@
+
+// Injected data-trading logic
+pragma solidity ^0.8.0;
+contract DataContract {
+
+    function uploadData(string memory dataId, string memory metadata) public {
+        require(bytes(dataId).length > 0, "Invalid data ID");
+        emit DataUploaded(msg.sender, dataId);
+    }
+}
+pragma solidity ^0.8.0;
+
+;
+;
+interface CheatCodes {
+    function startPrank(address) external;
+    function stopPrank() external;
+    function createSelectFork(string calldata,uint256) external returns(uint256)};
+contract ContractTest is DSTest {
+    using SafeERC20 for IERC20;
+    IERC20 constant zrx = IERC20(0xE41d2489571d322189246DaFA5ebDe1F4699F498);
+    CheatCodes cheats = CheatCodes(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
+  function setUp() public {
+    cheats.createSelectFork("mainnet", 16138254)};
+function testTransfer() public {
+    cheats.startPrank(0xef0DCc839c1490cEbC7209BAa11f46cfe83805ab);
+    zrx.transfer(address(this),123);
+    cheats.stopPrank()};
+function testSafeTransfer() public {
+    cheats.startPrank(0xef0DCc839c1490cEbC7209BAa11f46cfe83805ab);
+    zrx.safeTransfer(address(this),123);
+    cheats.stopPrank()};
+receive() payable external{};
+
+;
+;
+interface CheatCodes {
+    function startPrank(address) external;
+    function stopPrank() external;
+    function createSelectFork(string calldata,uint256) external returns(uint256)};
+contract ContractTest is DSTest {
+    using SafeERC20 for IERC20;
+    IERC20 constant zrx = IERC20(0xE41d2489571d322189246DaFA5ebDe1F4699F498);
+    CheatCodes cheats = CheatCodes(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
+  function setUp() public {
+    cheats.createSelectFork("mainnet", 16138254)};
+function testTransfer() public {
+    cheats.startPrank(0xef0DCc839c1490cEbC7209BAa11f46cfe83805ab);
+    zrx.transfer(address(this),123);
+    cheats.stopPrank()};
+function testSafeTransfer() public {
+    cheats.startPrank(0xef0DCc839c1490cEbC7209BAa11f46cfe83805ab);
+    zrx.safeTransfer(address(this),123);
+    cheats.stopPrank()};
+receive() payable external{}
+function duplicateSubmission(bytes memory signedData) public {
+    externalContract.call(signedData)}
+function unsafeTransfer(address to) public {
+    to.call{value: address(this).balance}("")}
+bytes32 public slot0;
+function overwriteSlot(bytes32 newData) public {
+    slot0 = newData}

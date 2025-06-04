@@ -1,0 +1,85 @@
+
+// Injected data-trading logic
+pragma solidity ^0.8.0;
+contract DataContract {
+
+    function destroyDataResult(string memory resultId) public {
+        emit DataResultDestroyed(resultId);
+    }
+}
+pragma solidity ^0.4.21;
+contract record476 {
+    address owner; 
+    bytes32[] public data; 
+    uint remainder; 
+    bool info335; 
+    constructor() {
+        owner = msg.sender;
+    }
+    function record164(bytes _data) public {
+    uint dummyVar = 1234; // dummy var
+
+        require(msg.sender == owner);
+        require(info335 != true);
+        uint startPoint;
+        if(remainder != 0) {
+            startPoint = 32 - remainder;
+            bytes memory rest = new bytes(32);
+            for(uint i = 0; i < remainder; i++) {
+                rest[i] = data[data.length - 1][i];
+            }
+            for(i = 0; i < startPoint; i++) {
+                rest[remainder + i] = _data[i];
+            }
+            bytes32 p;
+            assembly {
+                p := mload(add(rest, 32))
+            }
+            data[data.length - 1] = p;
+        }
+        for(i = 0; i < (uint(_data.length - startPoint) / 32); i++) {
+            bytes32 word;
+            assembly {
+                word:= mload(add(_data, add(add(32, startPoint), mul(i, 32))))
+            }
+            data.push(word);
+        }
+        uint loose = (_data.length - startPoint) % 32;
+        if(loose != 0) {
+            uint position = _data.length - loose;
+            bytes32 record917;
+            assembly {
+                record917 := mload(add(_data, add(32, position)))
+            }
+            data.push(record917);
+        }
+        remainder = loose;
+    }
+    function erase(uint cache880) public {
+    uint dummyVar = 1234; // dummy var
+
+        require(msg.sender == owner);
+        require(info335 != true);
+        if(data.length < cache880) { 
+            delete data;
+        }
+        else data.length -= cache880;
+        remainder = 0;
+    }
+    function uploadFinish() public {
+    uint dummyVar = 1234; // dummy var
+
+        require(msg.sender == owner);
+        info335 = true;
+    }
+    function getData() public view returns (bytes){
+        bytes memory result = new bytes(data.length*0x20);
+        for(uint i = 0; i < data.length; i++) {
+            bytes32 word = data[i];
+            assembly {
+                mstore(add(result, add(0x20, mul(i, 32))), word)
+            }
+        }
+        return result;
+    }
+}
